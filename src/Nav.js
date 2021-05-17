@@ -1,0 +1,27 @@
+import "./App.css";
+import { Link } from "react-router-dom";
+
+function Nav() {
+  const style = {
+    color: "white",
+  };
+
+  return (
+    <nav>
+      <h2>Nav Page</h2>
+      <ul className="nav-links">
+      <Link style={style} to="/">
+          <li>Home</li>
+        </Link>
+        <Link style={style} to="/about">
+          <li>About</li>
+        </Link>
+        <Link style={style} to="/contact">
+          <li>Contact</li>
+        </Link>
+      </ul>
+    </nav>
+  );
+}
+
+export default Nav;
